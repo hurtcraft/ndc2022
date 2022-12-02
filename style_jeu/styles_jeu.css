@@ -1,0 +1,23 @@
+body{
+    width: 100vw;
+    height: auto;
+    background-color: #DDD;
+}
+h1{
+    text-align: center;
+}
+.form{
+    border-radius: 15px;
+    padding: 2%;
+    margin-top: 10vh;
+    width: 40vw;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(200,80,80);
+    text-align: center;
+}
+p{
+    margin-top: 2%;
+    font-size: 1.6em;
+}
