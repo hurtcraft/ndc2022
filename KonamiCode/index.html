@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+<meta charset="utf-8">
+<title>o</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<style>
+body{
+    background-color:black;
+}
+#manette>div {
+  background: black;
+  color: white;
+  display:flex;
+  justify-content: center;
+}
+
+#manette[data-selected="ArrowUp"] .up,
+#manette[data-selected="ArrowDown"] .down,
+#manette[data-selected="ArrowLeft"] .left,
+#manette[data-selected="ArrowRight"] .right,
+#manette[data-selected="b"] .bButton,
+#manette[data-selected="a"] .aButton {
+  background: red;
+}
+
+    video {
+        display: none;
+    }
+    img{
+        position:absolute;
+        left:44%;
+        top: 70%;
+    }
+    #nes0{
+        position:absolute;
+        left:35%;
+        top:35%;
+    
+    }
+    #nes #arrowUp{display:none}
+    #nes #arrowDown{display:none}
+    #nes #arrowLeft{display:none}
+    #nes #arrowRight{display:none}
+    #nes #b{display:none}
+    #nes #a{display:none}
+
+    #nes img{
+        position:absolute;
+        left:35%;
+        top:35%;
+
+    }
+
+    #autoplay{
+        position:absolute;
+        width: 20%;
+        left:40%;
+        top:15%;
+    }
+</style>
+
+<body>
+    <script src="js/konami.js"></script>
+    
+    <div id="nes0"><img src="img/nes.png"><img src="img/codeKonami.png"></div>
+    
+    <div id="nes">
+        <img id="arrowUp" src="img/pressed/arrowUp.png">
+        <img id="arrowLeft" src="img/pressed/arrowLeft.png">
+        <img id="arrowRight" src="img/pressed/arrowRight.png">
+        <img id="arrowDown" src="img/pressed/arrowDown.png">
+        <img id="b" src="img/pressed/b.png">
+        <img id="a" src="img/pressed/a.png">
+    </div>
+    
+    <video id="autoplay" playsinline controls>
+        <source src="video.mp4">
+    </video>
+    
+    <div id="manette">
+        <div class="up">UP</div>
+        <div class="down">DOWN</div>
+        <div class="left">LEFT</div>
+        <div class="right">RIGHT</div>
+        <div class="aButton">A</div>
+        <div class="bButton">B</div>
+      </div>
+      
+</body>
+
+</html>
